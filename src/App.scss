@@ -1,0 +1,270 @@
+.header {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  .nav_menu {
+    margin-right: 50px;
+    .nav_list {
+      display: flex;
+      justify-content: end;
+      gap: 10px;
+    }
+  }
+}
+
+.UsersPage {
+  display: flex;
+  //background-color: orange;
+  .user {
+    display: block;
+    border: 1px solid black;
+    max-width: 700px;
+
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+
+    margin: 0 15px 10px 15px;
+
+    @media (max-width: 600px) {
+      width: 300px;
+      font-size: 18px;
+      margin: 0 5px 5px 5px;
+    }
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+      /* Стилі для планшетів */
+    }
+  }
+  .userItem {
+    margin: 0 auto;
+  }
+
+  ////
+}
+.TodoItem {
+  font-size: inherit;
+  line-height: normal;
+  max-width: 800px;
+
+  .Todo {
+    display: flex;
+
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+
+    border-bottom: 1px solid black;
+    h3 {
+      margin-right: 5px;
+    }
+    input {
+      width: 15px;
+      margin: 0 10px 0 10px;
+    }
+  }
+}
+.AllTodoItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .AllTodoList {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.AllPostItem {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.AllTodos {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: 27px;
+}
+.PostItem {
+  .post {
+    font-size: 18px;
+    line-height: normal;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  .post_title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.secondDivTodoOrPost {
+  max-width: 1100px;
+  margin-right: 25px;
+  font-size: 20px;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.custom-btn {
+  width: 60px;
+  height: 30px;
+  color: #fff;
+  border-radius: 5px;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  margin: 10px 10px 5px 0;
+}
+.btn-16 {
+  border: none;
+  color: #000;
+  z-index: 1;
+}
+.btn-16:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.btn-16:hover {
+  color: #000;
+}
+.btn-16:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-16:active {
+  top: 2px;
+}
+
+.mainDiv {
+  display: flex;
+}
+.centered-div {
+  width: 49%;
+  background-color: lightgray;
+}
+.div1 {
+  margin: 0 auto;
+  //background-color: black;
+}
+
+//.containerTest{
+//	display: flex;
+//	flex-direction: column;
+
+//	.wrapper{
+//		margin: 0 auto;
+
+//	.infoTest{
+//		margin-top: 10px;
+//		width: 700px;
+//		border: 1px solid black;
+//		padding: 10px;
+//	}
+//	.dropdown_menu{
+//		margin-top: 5px;
+//		width: 700px;
+//		padding: 10px;
+//		font-size: 18px;
+//		background-color: #413e3e;
+//	}
+//}
+//}
+
+.dropdown_UserInfo {
+  .dropdown_wrapper {
+    width: 700px;
+    background-color: lightblue;
+    margin: 0 15px 10px 15px;
+    padding: 5px;
+    font-size: 20px;
+
+    @media (min-width: 1001px) {
+      display: none;
+    }
+    @media (max-width: 600px) {
+      width: 300px;
+      font-size: 18px;
+      margin: 0 5px 5px 5px;
+    }
+  }
+}
+
+.drop {
+  @media (min-width: 1001px) {
+    display: none;
+  }
+}
+
+.Pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+  .page_number {
+    color: #fff;
+    background-color: #766b0b;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.5;
+  }
+}
+
+.EmptyList {
+  display: flex;
+  justify-content: center;
+}
+
+.smallLoader {
+  display: flex;
+  justify-content: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.08);
+}
